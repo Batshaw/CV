@@ -1,0 +1,169 @@
+body {
+	background-color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+}
+h4 {
+	margin-bottom: 30px;
+}
+
+/*For Navbar*/
+.bg-dark {
+	background-color: #1f2f40 !important;
+}
+#copyright {
+	color: white;
+	opacity: 0.8;
+}
+
+/*For Jumbotron*/
+#introduction {
+	margin-top: 80px;
+}
+#myJumbotron {
+	padding-top: 20vh;
+    min-height: 100vh;
+    min-width: 100vh;
+
+    background-color: #c2ced7;
+    color: #1f2f40;
+}
+#picAndHi {
+	
+}
+#shortcutContainer {
+	padding: 0px !important;
+	max-width: 700px;
+	margin: 0px;
+	margin-top: 60px;
+}
+#shortcuts {
+	margin-top: 20px;
+}
+#imgShortcuts {
+	width: 50px;
+}
+.h7 {
+	font-size: 1.0em;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#needToAlign {
+	margin-top: 15px;
+}
+#downSection {
+	margin-top: 20vh;
+	opacity: 0.5;
+}
+#downSection:hover {
+	opacity: 1;
+}
+
+/*For Content*/
+#rootContainer {
+	max-width: 80%;
+	line-height: 35px;
+}
+.teile {
+	background-color: #c2ced7;
+	margin-top: 50px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+}
+#bildung {
+	line-height: 25px;
+}
+#nameProject {
+	margin-top: 30px;
+}
+.textAfterIcon {
+	margin-top: 15px;
+	margin-left: 50px;
+	line-height: 25px;
+}
+.iconForIT {
+	width: 60px;
+}
+
+/*Fot toTopButton*/
+#boxOfButton {
+	padding-bottom: 10px; 
+}
+#toTopButton {
+	display: none;
+}
+#toTopButton:hover {
+	width: 60px;
+}
+iframe {
+	width: 350px !important;
+	height: 350px !important;
+}
+.embed-responsive {
+	width: 400px;
+}
+#realTimeImg {
+	margin-top: 20px;
+}
+.imageDes { 
+	padding-top: 10px;
+}
+.descript {
+	margin-top: 20px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.descript p {
+	max-width: 350px;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+}
+#stereoMatching img {
+	border-radius: 3px;
+}
+/* Tournament Tracker section*/
+.tourImg {
+	width: 150px;
+	opacity: 0.7;
+}
+.tourImg:hover {
+	opacity: 1;
+	background-color: white;
+}
+.expandedContainer {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: none;
+}
+.expandedContainer div {
+	max-width: 85%;
+	background-color: #1f2f40;
+	color: white;
+}
+.closebtn {
+	position: absolute;
+	right: 100px;
+	bottom: 477.5px;
+	color: white;
+	font-size: 40px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.port {
+	background-color: #f5f5f5;
+	padding-top: 20px;
+	margin-top: 60px;
+}
+.port h3 {
+	margin-top: 30px;
+}
+.lastPic {
+	border: solid 5px #00ffff;
+}
+.youLink {
+	height: 350px;
+}
