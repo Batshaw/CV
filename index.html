@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="Quang_CV.css">
+	<link rel="stylesheet" type="text/css" href="Quang_CV_1.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,336 +14,373 @@
 	<title>Dang Quang's CV</title>
 </head>
 <body>
-	<div class="" id="myJumbotron">
-		<div class="row" id="picAndHi">
-			<div class="col-2"></div>
-			<div class="col-3 align-self-center">
-				<img src="profilePic.png" alt="#" class="img-thumbnail rounded-circle img-responsive" id="profilePicture">
+	<section class="container-fluid" id="myJumbotron">
+		<div class="row align-items-center justify-content-center" id="picAndHi">
+			<div class="col-lg-3 col-md-auto d-flex justify-content-center">
+				<img src="https://i.imgur.com/4cd91u7.png" alt="#" class="img-thumbnail rounded-circle img-responsive" id="profilePicture" width="330px">
 			</div>
-			<div class="col-6" id="introduction">
-				<h1 class="text-left">QUANG DANG</h1>
-				<h5 class="text-left">Medien Informatik Student an der Bauhaus Universität Weimar</h5>
-				<div class="container" id="shortcutContainer">
-					<div class="row justify-content-start" id="shortcuts">
-						<div class="col-2 text-center">
-							<a href="#anchorProfile">
-								<img src="icon\profile.png" id="imgShortcuts">
-							</a>
-							<div class="h7">Profil</div>
-						</div>
-						<div class="col-2 text-center">
-							<a href="#anchorBildung">
-								<img src="icon\cv.png" id="imgShortcuts">
-							</a>
-							<div class="h7">Lebenslauf</div>
-						</div>
-						<div class="col-2 text-center">
-							<a href="#anchorIT">
-								<img src="icon\itskill.png" id="imgShortcuts">
-							</a>
-							<div class="h7">Kenntnisse</div>
-						</div>
-						<div class="col-2 text-center">
-							<a href="#anchorStereoMatching">
-								<img src="icon\portfolio.png" id="imgShortcuts">
-							</a>
-							<div class="h7" id="needToAlign">Portfolio</div>
-						</div>
+			<div class="col-md-auto col-lg-6 d-flex flex-column " id="introduction">
+				<div class="row justify-content-center justify-content-lg-start">
+					<div class="col-auto d-flex flex-column">
+						<h1 class="text-center text-lg-left">QUANG DANG</h1>
+						<h5 class="text-center text-lg-left">Medien Informatik Student an der Bauhaus Universität Weimar</h5>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center justify-content-lg-start" id="shortcuts">
+					<div class=" col-auto d-flex flex-column text-center">
+						<a href="#anchorProfile">
+							<img src="icon\profile.png" id="imgShortcuts">
+						</a>
+						<div class="h7">Profil</div>
+					</div>
+					<div class=" col-auto d-flex flex-column text-center">
+						<a href="#anchorBildung">
+							<img src="icon\cv.png" id="imgShortcuts">
+						</a>
+						<div class="h7">Lebenslauf</div>
+					</div>
+					<div class=" col-auto d-flex flex-column text-center">
+						<a href="#anchorIT">
+							<img src="icon\itskill.png" id="imgShortcuts">
+						</a>
+						<div class="h7">Kenntnisse</div>
+					</div>
+					<div class=" col-auto d-flex flex-column text-center">
+						<a href="#anchorStereoMatching">
+							<img src="icon\portfolio.png" id="imgShortcuts">
+						</a>
+						<div class="h7" id="needToAlign">Portfolio</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="fixedTopNavbar">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="https://www.wikipedia.org/">QUANG DANG</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toCollapse" aria-controls="toCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="toCollapse">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-						<div class="dropdown-menu" aria-labelledby="navDropdown">
-							<a class="dropdown-item" href="#anchorStereoMatching">Realtime Stereo Matching</a>
-							<a class="dropdown-item" href="#anchorTournamentTracker">Tournament Tracker</a>
-							<a class="dropdown-item" href="#anchorRayTracing">Raytracing</a>
-							<a class="dropdown-item" href="#anchorUniverse">Universe-SceneGraph</a>
-						</div>
-					</li>
-					<li>
-						<a class="nav-link" href="#anchorProfile">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div class="d-flex flex-row-reverse">
-				<div class="p-2" id="copyright">Website made by QuangDang</div>
-			</div>
+		<a class="navbar-brand" href="https://www.wikipedia.org/">QUANG DANG</a>
+		<div class="collapse navbar-collapse" id="toCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+					<div class="dropdown-menu" aria-labelledby="navDropdown">
+						<a class="dropdown-item" href="#anchorStereoMatching">Realtime Stereo Matching</a>
+						<a class="dropdown-item" href="#anchorTournamentTracker">Tournament Tracker</a>
+						<a class="dropdown-item" href="#anchorUniverse">Universe-SceneGraph</a>
+						<a class="dropdown-item" href="#anchorRayTracing">Raytracing</a>
+					</div>
+				</li>
+				<li>
+					<a class="nav-link" href="#anchorProfile">Contact</a>
+				</li>
+			</ul>
 		</div>
-	</nav>
-	<div id="anchorProfile"></div>
-	<div class="row justify-content-center fixed-bottom" id="downSection">
-			<div class="col-2 align-self-end text-center">
-				<span onclick="scrollFunc(this);" id="scrollbtn"><img src="icon\scrollDown.png" width="70px"></span>
+		<div class="d-flex flex-row-reverse">
+			<div class="p-2" id="copyright">Website made by QuangDang</div>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toCollapse" aria-controls="toCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>	
+
+	<section class="container-fluid">
+			<div class="col-auto d-none d-md-flex flex-column text-center fixed-bottom">
+				<span onclick="scrollFunc(this);" id="scrollbtn"><img src="icon\scrollDown.png" width="70px" id="downSection"></span>
 			</div>
-	</div>
-	<div class="row justify-content-end fixed-bottom" id="boxOfButton">
-		<div class="col-1"></div>
-		<div class="col-1">
+	</section>
+
+
+	<section class="row d-flex flex-row justify-content-md-end justify-content-center fixed-bottom" id="boxOfButton">
+		<div class="col-auto">
 			<img onclick="topFunction()" src="icon\scrollTop.png" width="50px" id="toTopButton">
 		</div>
-	</div>
-	<div class="container" id="rootContainer">
-		<main role="main" class="container-fluid">
-			<div id="profile" class="container rounded teile">
-				<div class="row">
-					<div class="col-8">
-						<h4>Contact</h4>
-						<ul style="list-style-type: none">
-							<li><b>Dang, Nhu Quang</b></li>
-							<li>
-								<img src="icon\i3.png" width="25px">
-								Anschrift: Warschauer Str. 20, 99427 Weimar
-							</li>
-							<li>
-								<img src="icon\i2.png" width="25px">
-								Geboren: 25.02.1992 in Vietnam
-							</li>
-							<li>
-								<img src="icon\i4.png" width="25px">
-								Tel: 015207961793
-							</li>
-							<li>
-								<img src="icon\i5.png" width="25px">
-								Email: nhu.quang.dang@uni-weimar.de
-							</li>
-						</ul>					
-					</div>
-					<div class="col-4">
-						<h4>Interessen und Hobbies</h4>
-						<ul style="list-style-type: none">
-							<li>
-								<img src="icon\i7.png" width="25px">
-								Photographieren/ Filmphotographieren
-							</li>
-							<li>
-								<img src="icon\i6.png" width="25px">
-								Sport: Gym, Laufen, Radfahren, Schwimmen
-							</li>
-							<li>
-								<img src="icon\i8.png" width="25px">
-								Music: Gitarre
-							</li>
-						</ul>					
+	</section>
+
+																						<!-- CONTENT -->
+	<div id="anchorProfile"></div>
+	<section class="container-fluid">
+		<div class="row d-flex flex-row justify-content-between rounded teile">
+			<div class="col-auto">
+				<h4>Contact</h4>
+				<ul style="list-style-type: none">
+					<li><b>Dang, Nhu Quang</b></li>
+					<li>
+						<img src="icon\i3.png" width="25px">
+						Anschrift: Warschauer Str. 20, 99427 Weimar
+					</li>
+					<li>
+						<img src="icon\i2.png" width="25px">
+						Geburtsdatum: 25.02.1992 in Vietnam
+					</li>
+					<li>
+						<img src="icon\i4.png" width="25px">
+						Tel: 015207961793
+					</li>
+					<li>
+						<img src="icon\i5.png" width="25px">
+						Email: nhu.quang.dang@uni-weimar.de
+					</li>
+				</ul>					
+			</div>
+			<div class="col-auto">
+				<h4>Interessen und Hobbies</h4>
+				<ul style="list-style-type: none">
+					<li>
+						<img src="icon\i7.png" width="25px">
+						Photographieren/ Filmphotographieren
+					</li>
+					<li>
+						<img src="icon\i6.png" width="25px">
+						Sport: Gym, Laufen, Radfahren, Schwimmen
+					</li>
+					<li>
+						<img src="icon\i8.png" width="25px">
+						Music: Gitarre
+					</li>
+				</ul>					
+			</div>					
+		</div>	
+	</section>
+
+	<div id="anchorBildung"></div>
+	<section class="container-fluid">
+		<div class="rounded teile">
+			<h4>Bildungsweg</h4>
+			<ul>
+				<li>
+					<p>2010 - 2012: National University of Civil Engineering in Vietnam</p>
+				</li>
+				<li>
+					<p>2012 - 2013: Staatliches Studienkolleg Nordhausen</p>
+					<p>T-Kurs (Vorbereitung auf technische, mathematische und naturwissenschaftliche Studiengänge)</p>
+				</li>
+				<li>
+					<p>2013 - 2017: Student in Bauingenieurwesen B., Sc., Bauhaus-Universität Weimar</p>
+				</li>
+				<li>
+					<p>2017 - jetzt: Student in Medien B., Sc., Bauhaus-Universität Weimar</p>
+					<p>Schwerpunkt: Medieninformatik</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<div id="anchorIT"></div>
+	<section class="container-fluid">
+		<div class="rounded teile">
+			<h4>IT-Kenntnisse und Erfahrungen</h4>
+			<div class="row justify-content-center rows">
+				<div class="col d-flex flex-column">
+					<img class="mx-auto iconForIT" src="icon\stereo.png">
+					<div class="mx-auto textAfterIcon">
+						<p>Erste Uni Projekt:</p>
+						<p><a href="#anchorStereoMatching">Realtime Stereo Matching</a> <a href="https://github.com/Batshaw/Real-Time-Stereo-Matching-" target="_blank"><img src="icon\git.png" width="25px"></a></p>
+						<p>Sprache: C++ und OpenCL</p>
+						<p>Note: 1,3</p>
+						<p>Ausstellung in <a href="https://www.uni-weimar.de/de/universitaet/partner-und-alumni/partner/weltweitweimar/summaery/">summaery2019</a></p>	
 					</div>					
-				</div>	
-				<div id="anchorBildung"></div>
-			</div>
-			<div id="bildung" class="container rounded teile">
-				<h4>Bildungsweg</h4>
-				<ul>
-					<li>
-						<p>2010 - 2012: National University of Civil Engineering in Vietnam</p>
-					</li>
-					<li>
-						<p>2012 - 2013: Staatliches Studienkolleg Nordhausen</p>
-						<p>T-Kurs (Vorbereitung auf technische, mathematische und naturwissenschaftliche Studiengänge)</p>
-					</li>
-					<li>
-						<p>2013 - 2017: Student in Bauingenieurwesen B., Sc., Bauhaus-Universität Weimar</p>
-					</li>
-					<li>
-						<p>2017 - jetzt: Student in Medien B., Sc., Bauhaus-Universität Weimar</p>
-						<p>Schwerpunkt: Medieninformatik</p>
-					</li>
-				</ul>
-				<div id="anchorIT"></div>
-			</div>
-			<div id="itKenntnisse" class="container rounded teile">
-				<h4>IT-Kenntnisse und Erfahrungen</h4>
-				<div class="row" id="nameProject">
-					<div class="col">
-						<img class="mx-auto d-block iconForIT" src="icon\stereo.png">
-						<div class="container textAfterIcon">
-							<p>Erste Uni Projekt:</p>
-							<p><a href="#anchorStereoMatching">Realtime Stereo Matching</a> <a href="https://github.com/Batshaw/Real-Time-Stereo-Matching-" target="_blank"><img src="icon\git.png" width="25px"></a></p>
-							<p>Sprache: C++ und OpenCL</p>
-							<p>Note: 1,3</p>
-							<p>Ausstellung in <a href="https://www.uni-weimar.de/de/universitaet/partner-und-alumni/partner/weltweitweimar/summaery/">summaery2019</a></p>	
-						</div>					
-					</div>
-					<div class="col">
-						<img class="mx-auto d-block iconForIT" src="icon\tour.png">
-						<div class="container textAfterIcon">
-							<p>Self-Learning:</p>
-							<p><a href="#anchorTournamentTracker">Tournament-Tracker</a> <a href="https://github.com/Batshaw/Tournament-Tracker" target="_blank"><img src="icon\git.png" width="25px"></a></p>
-							<p>Sprache: C# mit Winforms</p>
-							<p>Source: <a href="https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi" target="_blank">IAmTimCorrey</a></p>
-						</div>
-					</div>
-					<div class="col">
-						<img class="mx-auto d-block iconForIT" src="icon\uni.png">
-						<div class="container textAfterIcon">
-							<p>Mini-Uni-Projekt:</p>
-							<p><a href="#anchorUniverse">Universe - SceneGraph</a> <a href="https://github.com/Batshaw/Universe--SceneGraph-with-OpenGL" target="_blank"><img src="icon\git.png" width="25px"></a></p>
-							<p>Sprache: C++ und OpenGL</p>
-						</div>
-					</div>
-					<div class="col">
-						<img class="mx-auto d-block iconForIT" src="icon\ray.png">
-						<div class="container textAfterIcon">
-							<p>Mini-Uni-Projekt:</p>
-							<p><a href="#anchorRayTracing">Raytracing</a> <a href="https://github.com/Batshaw/RayTracing-with-C-" target="_blank"><img src="icon\git.png" width="25px"></a></p>
-							<p>Sprache: C++</p>
-						</div>
-					</div>
-				</div>	
-				<div id="anchorFaehigkeit"></div>		
-			</div>
-			<div id="softSkill" class="container rounded teile">
-				<div class="row">
-					<div class="col">
-						<h4>Sprachen</h4>
-						<ul style="list-style-type: none">
-							<li>
-								<img src="icon\f1.png" width="25px">
-								Deutsch: C1
-							</li>
-							<li>
-								<img src="icon\f2.png" width="25px">
-								Englisch: gute Kenntnisse
-							</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h4>Fähigkeiten</h4>
-						<ul style="list-style-type: none">
-							<li>
-								<img src="icon\i10.png" width="25px">
-								Lernfähigkeit
-							</li>
-							<li>
-								<img src="icon\i9.png" width="25px">
-								Teamarbeit
-							</li>					
-						</ul>
+				</div>
+				<div class="col d-flex flex-column">
+					<img class="mx-auto iconForIT" src="icon\tour.png">
+					<div class="mx-auto textAfterIcon">
+						<p>Self-Learning:</p>
+						<p><a href="#anchorTournamentTracker">Tournament-Tracker</a> <a href="https://github.com/Batshaw/Tournament-Tracker" target="_blank"><img src="icon\git.png" width="25px"></a></p>
+						<p>Sprache: C# mit Winforms</p>
+						<p>Source: <a href="https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi" target="_blank">IAmTimCorrey</a></p>
 					</div>
 				</div>
-				<div id="anchorStereoMatching"></div>
+				<div class="col d-flex flex-column">
+					<img class="mx-auto iconForIT" src="icon\uni.png">
+					<div class="mx-auto textAfterIcon">
+						<p>Mini-Uni-Projekt:</p>
+						<p><a href="#anchorUniverse">Universe - SceneGraph</a> <a href="https://github.com/Batshaw/Universe--SceneGraph-with-OpenGL" target="_blank"><img src="icon\git.png" width="25px"></a></p>
+						<p>Sprache: C++ und OpenGL</p>
+					</div>
+				</div>
+				<div class="col d-flex flex-column">
+					<img class="mx-auto iconForIT" src="icon\ray.png">
+					<div class="mx-auto textAfterIcon">
+						<p>Mini-Uni-Projekt:</p>
+						<p><a href="#anchorRayTracing">Raytracing</a> <a href="https://github.com/Batshaw/RayTracing-with-C-" target="_blank"><img src="icon\git.png" width="25px"></a></p>
+						<p>Sprache: C++</p>
+					</div>
+				</div>
 			</div>
-		</main>
-	</div>
-	<div class="port">
+		</div>
+	</section>
+
+	<section class="container-fluid">
+		<div class="row d-flex flex-row rounded teile">
+			<div class="col">
+				<h4>Sprachen</h4>
+				<ul style="list-style-type: none">
+					<li>
+						<img src="icon\f1.png" width="25px">
+						Deutsch: B2+
+					</li>
+					<li>
+						<img src="icon\f2.png" width="25px">
+						Englisch: gute Kenntnisse
+					</li>
+				</ul>		
+			</div>
+			<div class="col">
+				<h4>Fähigkeiten</h4>
+				<ul style="list-style-type: none">
+					<li>
+						<img src="icon\i10.png" width="25px">
+						Lernfähigkeit
+					</li>
+					<li>
+						<img src="icon\i9.png" width="25px">
+						Teamarbeit
+					</li>					
+				</ul>					
+			</div>					
+		</div>	
+	</section>
+																		<!-- PORTFOLIO -->
+	<div id="anchorStereoMatching"></div>																		
+	<section class="container-fluid portSection">
 		<div class="text-center">
 			<h3>Portfolio</h3>
 		</div>
-		<div id="stereoMatching" class="container rounded teile">
-			<div class="container">
-				<h4><img class="iconForIT" src="icon\stereo.png"> Realtime Stereo Matching <a href="https://github.com/Batshaw/Real-Time-Stereo-Matching-" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
-				<div class="container row imageDes">
-					<div class="col-3 align-self-center">
-						<img src="resource\StereoMatching\04.png" width="200px">
+
+									<!-- STEREO MATCHING -->
+		<div id="stereoMatching" class="rounded teile">
+			<h4><img class="iconForIT" src="icon\stereo.png"> Realtime Stereo Matching <a href="https://github.com/Batshaw/Real-Time-Stereo-Matching-" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
+			<div class="container-fluid row justify-content-center imageDes">
+				<div class="col-auto col-lg-3 align-self-center">
+					<img src="https://i.imgur.com/d3tFKqj.png" width="200px">
+				</div>
+				<div class="col-auto col-lg-3">
+					<div class="row justify-content-lg-start">
+						<img src="https://i.imgur.com/hk9nLpz.png" width="200px">
 					</div>
-					<div class="col-3">
-						<div class="row">
-							<img src="resource\StereoMatching\02.1.png" width="200px">
-						</div>
-						<div class="row">
-							<img src="resource\StereoMatching\02.2.png" width="200px" id="realTimeImg">
-						</div>
-					</div>
-					<div class="col-3 align-self-center">
-						<img src="resource\StereoMatching\03.png" width="200px">
-					</div>
-					<div class="col-3 align-self-center">
-						<img src="resource\StereoMatching\01.png" width="200px" class="lastPic">
+					<div class="row">
+						<img src="https://i.imgur.com/wn3jroF.png" width="200px" id="realTimeImg">
 					</div>
 				</div>
-				<div class="container row justify-content-center descript">
-						<div class="col-5 text-center">
-							<p>Depth map and 3D-Pointcloud from 2 Stereo Cameras</p>
-						</div>
+				<div class="col-auto col-lg-3 align-self-center">
+					<img src="https://i.imgur.com/9i5hpnq.png" width="200px">
 				</div>
-				<p><b>Ziel:</b> Wiederaufbauen der 3D-Punktwolke durch Stereobildpaare aus 2 Kameras in Echtzeit mittels C++ und OpenCL (Parallel Computing auf CPU, GPU)</p>
-				<p><b>Erfolg:</b> Es ist uns gelungen, zwei vorhandene Algorithmen zu implementieren, nämlich PatchMatch und ADCensus. Unsere Anwendung läuft in nahezu Echtzeit. Mitte Juli 2019 hatten wir bei <a href="https://www.uni-weimar.de/de/universitaet/partner-und-alumni/partner/weltweitweimar/summaery/">summaery2019</a> die Gelegenheit, unser Projekt den Besucherin und Besucher vorzustellen. Mit dem Projekt haben wir die Note 1,3 von dem Professor bekommen.</p>
-				<p><b>Meine Rolle:</b> Am Anfang des Projekts habe ich den Ideen zur Pipeline-Entwicklung eingebracht. Danach haben eine Partnerin und ich den PatchMatch-Algorithmus und den Teil 3D-Rekonstruktion implementiert. Am Ende habe ich an der Anordnung des Stereokamerasystems teilgenohmen.</p>
+				<div class="col-auto col-lg-3 align-self-center">
+					<img src="https://i.imgur.com/giH6UYc.png" width="200px" class="lastPic">
+				</div>
 			</div>
-			<div id="anchorTournamentTracker"></div>
+			<div class="container row justify-content-center descript">
+					<div class="col-auto text-center">
+						<p>Depth map and 3D-Pointcloud from 2 Stereo Cameras</p>
+					</div>
+			</div>
+			<p><b>Ziel:</b> Wiederaufbauen der 3D-Punktwolke durch Stereobildpaare aus 2 Kameras in Echtzeit mittels C++ und OpenCL (Parallel Computing auf CPU, GPU)</p>
+			<p><b>Erfolg:</b> Es ist uns gelungen, zwei vorhandene Algorithmen zu implementieren, nämlich PatchMatch und ADCensus. Unsere Anwendung läuft in nahezu Echtzeit. Mitte Juli 2019 hatten wir bei <a href="https://www.uni-weimar.de/de/universitaet/partner-und-alumni/partner/weltweitweimar/summaery/">summaery2019</a> die Gelegenheit, unser Projekt den Besucherin und Besucher vorzustellen. Mit dem Projekt haben wir die Note 1,3 von dem Professor bekommen.</p>
+			<p><b>Meine Rolle:</b> Am Anfang des Projekts habe ich den Ideen zur Pipeline-Entwicklung eingebracht. Danach haben eine Partnerin und ich den PatchMatch-Algorithmus und den Teil 3D-Rekonstruktion implementiert. Am Ende habe ich an der Anordnung des Stereokamerasystems teilgenohmen.</p>
 		</div>
-		<div id="tournamentTracker" class="container rounded teile">
-			<div class="container">
-				<h4><img class="iconForIT" src="icon\tour.png"> Tournament-Tracker <a href="https://github.com/Batshaw/Tournament-Tracker" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
+
+									<!-- TOURNAMENT TRACKER -->
+		<div id="anchorTournamentTracker"></div>
+		<div id="tournamentTracker" class="rounded teile">
+			<h4><img class="iconForIT" src="icon\tour.png"> Tournament-Tracker <a href="https://github.com/Batshaw/Tournament-Tracker" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
+			<div class="container-fluid d-none d-md-block">
 				<div class="row justify-content-center">
-					<div class="col-2">
-						<img src="resource\Tournament_Tracker\dashboard.png" alt="Dashboard" onclick="myFunction(this);" class="tourImg">
+					<div class="col-auto col-lg-2 align-self-center">
+						<img src="https://i.imgur.com/oQ6uvQW.png" alt="Dashboard" onclick="myFunction(this);" class="tourImg">
 					</div>
-					<div class="col-2">
-						<img src="resource\Tournament_Tracker\prizeCreator.png" alt="Prize Creator" onclick="myFunction(this);" class="tourImg">
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/1tNpIVq.png" alt="Prize Creator" onclick="myFunction(this);" class="tourImg">
 					</div>
-					<div class="col-2">
-						<img src="resource\Tournament_Tracker\teamCreator.png" alt="Team Creator" onclick="myFunction(this);" class="tourImg">
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/NidwoEa.png" alt="Team Creator" onclick="myFunction(this);" class="tourImg">
 					</div>
-					<div class="col-2">
-						<img src="resource\Tournament_Tracker\tournamentCreator.png" alt="Tournament Creator" onclick="myFunction(this);" class="tourImg">
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/ycduFlB.png" alt="Tournament Creator" onclick="myFunction(this);" class="tourImg">
 					</div>
-					<div class="col-2">
-						<img src="resource\Tournament_Tracker\tournamentViewer.png" alt="Tournamnet Viewer" onclick="myFunction(this);" class="tourImg">
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/92gxX3p.png" alt="Tournamnet Viewer" onclick="myFunction(this);" class="tourImg">
 					</div>
 				</div>
-				<div class="container row justify-content-center descript">
-						<div class="col-5 text-center" id="disText">
-							<p>Tournament-Tracker (zum Zeigen auf die Bilder klicken)</p>
-						</div>
+				<div class="row justify-content-center descript">
+					<div class="col col-lg-5 text-center" id="disText">
+						<p>Tournament-Tracker (zum Zeigen auf die Bilder klicken)</p>
+					</div>
 				</div>
-				<div class="container expandedContainer text-center">
+				<div class="expandedContainer text-center">
 					<span onclick="closeFunc(this);" class="closebtn">&times;</span>
 					<div class="mx-auto d-block" id="imgtext"></div>
 					<img id="expandedImg" style="width:85%">
 				</div>
-				<p style="margin-top:20px"><b>Ziel:</b> Lernen der Sprache C# und lernen der Erstellung einer Windows Anwendung mit Winforms. Tournament-Tracker ist eine Anwendung zur Verfolgung eines privaten Turniers, mit dem man Spieler, Manschaften und Turnier erstellen kann. Man kann auch Ergebnis eingeben und gibt die Anwendung die Informationen der nächscten Runde aus. </p>
-				<p><b>Erfolg:</b> Mit Hilfe der Youtube Kanal nämhlich IAmTimCorey habe ich eine Winforms Anwendung erstellt, die sich mit SQL verbindet. Dadurch habe ich gelernt, wie ein Winforms Anwendung mit C# erstellen kann und wie man die Anwendung mit SQL Datenbank einbinden kann. Ich habe auch die Schnittstelle der Anwendung mit User Controll neu gestaltet.</p>
-				<p><b>Meine Rolle:</b> Einzelprojekt</p>
-				<p><b>Source:</b> <a href="https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi" target="_blank">IAmTimCorrey</a></p>
 			</div>
-			<div id="anchorUniverse"></div>
-		</div>
-		<div id="universe" class="container rounded teile">
-			<div class="container">
-				<h4><img class="iconForIT" src="icon\uni.png"> Universe - SceneGraph <a href="https://github.com/Batshaw/Universe--SceneGraph-with-OpenGL" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
-				<div class="embed-responsive embed-responsive-1by1 mx-auto d-block youLink">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xJzV556xkOo?&start=0&end=18&autoplay=1" allowfullscreen></iframe>
+			<div class="container-fluid d-block d-md-none">
+				<div class="row justify-content-center">
+					<div class="col-auto col-lg-2 align-self-center">
+						<img src="https://i.imgur.com/oQ6uvQW.png" alt="Dashboard" class="tourImgSm">
+					</div>
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/1tNpIVq.png" alt="Prize Creator" class="tourImgSm">
+					</div>
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/NidwoEa.png" alt="Team Creator" class="tourImgSm">
+					</div>
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/ycduFlB.png" alt="Tournament Creator" class="tourImgSm">
+					</div>
+					<div class="col-auto col-lg-2">
+						<img src="https://i.imgur.com/92gxX3p.png" alt="Tournamnet Viewer" class="tourImgSm">
+					</div>
 				</div>
-				<div class="container row justify-content-center descript">
-						<div class="col-5 text-center" id="disText">
-							<p>Modellierung des Solarsystems</p>
-						</div>
+				<div class="col col-lg-5 text-center descript">
+					<p>Tournament-Tracker (zum Zeigen auf die Bilder klicken)</p>
+				</div>
+			</div>
+			<p style="margin-top:20px"><b>Ziel:</b> Lernen der Sprache C# und lernen der Erstellung einer Windows Anwendung mit Winforms. Tournament-Tracker ist eine Anwendung zur Verfolgung eines privaten Turniers, mit dem man Spieler, Manschaften und Turnier erstellen kann. Man kann auch Ergebnis eingeben und gibt die Anwendung die Informationen der nächscten Runde aus. </p>
+			<p><b>Erfolg:</b> Mit Hilfe der Youtube Kanal nämhlich IAmTimCorey habe ich eine Winforms Anwendung erstellt, die sich mit SQL verbindet. Dadurch habe ich gelernt, wie ein Winforms Anwendung mit C# erstellen kann und wie man die Anwendung mit SQL Datenbank einbinden kann. Ich habe auch die Schnittstelle der Anwendung mit User Controll neu gestaltet.</p>
+			<p><b>Meine Rolle:</b> Einzelprojekt</p>
+			<p><b>Source:</b> <a href="https://www.youtube.com/watch?v=HalXZUHfKLA&list=PLLWMQd6PeGY3t63w-8MMIjIyYS7MsFcCi" target="_blank">IAmTimCorrey</a></p>
+		</div>
+
+									<!-- SCENE GRAPH -->
+		<div id="anchorUniverse"></div>
+		<div id="universe" class="rounded teile">
+			<div class="container-fluid">
+				<h4><img class="iconForIT" src="icon\uni.png"> Universe - SceneGraph <a href="https://github.com/Batshaw/Universe--SceneGraph-with-OpenGL" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
+				<div class="col d-flex flex-column">
+					<div class="embed-responsive embed-responsive-1by1 youLink mx-auto">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xJzV556xkOo?&start=0&end=18&autoplay=1" allowfullscreen></iframe>
+					</div>
+					<div class="descript mx-auto">
+						<p>Modellierung des Solarsystems</p>
+					</div>
 				</div>
 				<p><b>Ziel:</b> Lernen der Grafikbibliothek OpenGL und Erzeugung visueller Darstellung mit Hilfe von Computern</p>
 				<p><b>Erfolg:</b> Das Projekt war ein Finalprojekt einer Veralstaltung an der Universität. Nach dieser Veralstaltung habe ich die grundlegenden Verfahren der Erzeugung visueller Darstellung mit OpenGL gelernt.</p>
 				<p><b>Meine Rolle:</b> Ein Freund und ich lernten und implementierten zusammen.</p>
 			</div>
 			<div id="anchorRayTracing"></div>
-		</div>
-		<div id="rayTracing" class="container rounded teile">
-			<div class="container">
+		</div>		
+
+									<!-- RAY TRACING -->		
+		<div id="anchorRayTracing"></div>									
+		<div id="rayTracing" class="rounded teile">
+			<div class="container-fluid">
 				<h4><img class="iconForIT" src="icon\ray.png"> Raytracing <a href="https://github.com/Batshaw/RayTracing-with-C-" target="_blank"><img src="icon\git.png" width="25px"></a></h4>
-				<div class="embed-responsive embed-responsive-1by1 mx-auto d-block youLink">
+				<div class="col d-flex flex-column">
+					<div class="embed-responsive embed-responsive-1by1 mx-auto youLink">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fvEbyKOsqgQ?&autoplay=1" allowfullscreen></iframe>
-				</div>
-				<div class="container row justify-content-center descript">
-						<div class="col-5 text-center" id="disText">
-							<p>Raytracing: Sichtbarkeit von 3D-Objekten von einem bestimmten Punkt im Raum</p>
-						</div>
+					</div>
+					<div class="descript mx-auto text-center">
+						<p>Raytracing: Sichtbarkeit von 3D-Objekten von einem bestimmten Punkt im Raum</p>
+					</div>
 				</div>
 				<p><b>Ziel:</b> Lernen der Sprache C++</p>
 				<p><b>Erfolg:</b> Das Projekt war ein Finalprojekt einer Veralstaltung an der Universität. Ich habe die Sprache C++ und auch die Ermittlung der Sichtbarkeit von dreidimensionalen Objekten von einem bestimmten Punkt im Raum gelernt.</p>
 				<p><b>Meine Rolle:</b> Ein Freund und ich haben zusammen gelernt und implementiert.</p>
 			</div>
-		</div>
-	</div>			
+		</div>									
+	</section>
 	<script src="Quang_CV.js"></script>
 </body>
 </html>
