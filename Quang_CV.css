@@ -1,14 +1,16 @@
 body {
-	background-color: #ffffff;
-	font-family: 'Oswald', sans-serif;
+	background-color: #f5f5f5;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 /* Landing Page */
 #myJumbotron {
-	padding-top: 20vh;
+	padding-top: 10vh;
+	padding-left: 0;
     min-height: 100vh;
 
-    background-color: #c2ced7;
+    background-color: #f5f5f5;
     color: #1f2f40;
 }
 #profilePicture {
@@ -26,19 +28,27 @@ body {
 	margin-top: 15px;
 }
 .h7 {
-	font-size: 1.0em;
-	margin-top: 10px;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	font-weight: bold;
+	color: #d8cb2c;
+	/*color: #ffee00;*/
 }
 
 /* Navbar */
-.bg-dark {
-	background-color: #1f2f40 !important;
+.bg-light {
+	background-color: #ffffff !important;
 }
 #copyright {
-	color: white;
+	color: lightgrey;
 	opacity: 0.8;
+}
+.navbar {
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
+.navBarToHide {
+
 }
 
 /* Down Button */
@@ -63,17 +73,18 @@ body {
 
 /* Sections */
 .teile {
-	background-color: #c2ced7;
-	margin-top: 50px;
+	background-color: #f5f5f5;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	padding-bottom: 25px;
 	padding-top: 25px;
 	padding-left: 15px;
-	padding-right: 15px;
+	padding-right: 60px;
 }
 @media (min-width: 1200px) {
 	.teile {
-		margin-right: 15%; 
-		margin-left: 15%;
+		margin-right: 0%; 
+		margin-left: 0%;
 	}
 	.youLink {
 		max-width: 350px;
@@ -92,10 +103,20 @@ body {
 	margin-left: 50px;
 	line-height: 25px;
 }
+/*.breakLine {
+	margin-left: 5%;
+	margin-right: 5%;
+}*/
 
 /*Portfolio*/
+.secTitle{
+	margin-top: 100px;
+}
+.lebenslauf {
+	margin-top: 150px;
+}
 .portSection {
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	margin-top: 50px;
 	padding-top: 50px;
 }
@@ -110,13 +131,17 @@ body {
 .descript p {
 	max-width: 350px;
 	color: black;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-style: italic;
 }
 
 /*TOURNAMENT TRACKER*/
+.projectText {
+	padding-right: 50px;
+}
+
 .tourImg {
-	width: 150px;
+	width: 80px;
 	opacity: 0.7;
 }
 .tourImg:hover {
@@ -133,14 +158,14 @@ body {
 	display: none;
 }
 .expandedContainer div {
-	max-width: 85%;
+	max-width: 80%;
 	background-color: #1f2f40;
 	color: white;
 }
 .closebtn {
 	position: absolute;
-	left: 91%;
-	bottom: 93.5%;
+	left: 87%;
+	bottom: 87.5%;
 	color: white;
 	font-size: 40px;
 	opacity: 0.8;
@@ -152,4 +177,57 @@ body {
 
 #rayTracing {
 	margin-bottom: 50px;
+}
+
+
+/*				SKILL BARS			*/
+.w-100 {
+	margin-bottom:10px !important;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skillBar {
+  width: 70%; /* Full width */
+  background-color: #fcfcc8; /* Grey background */
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 0px; /* Add top padding */
+  padding-bottom: 0px; /* Add bottom padding */
+  padding-left: 10px;
+  color: black; /* White text color */
+  height: 100%;
+  font-size: 0.8rem;
+  background-color: #ffee32;
+}
+
+.cSharp {width: 90%} 
+.cPlus {width: 95%} 
+.py {width: 85%} 
+.oop {width: 75%}
+.entity {width: 70%}
+.mvc {width: 80%}
+.htmlCss {width: 60%}
+.bootStrap {width: 50%}
+.jScript {width: 70%}
+.gitHub {width: 80%}
+.openCv {width: 85%}
+.openCl {width: 70%}
+
+.linkGit {
+	font-size: 1.0rem;
+	font-weight: 400;
+	color: #d8cb2c;
+}
+a {
+	color: #d8cb2c;
 }

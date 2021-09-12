@@ -1,17 +1,20 @@
 //Get the button:
 mybutton = document.getElementById("toTopButton");
 var scrollBtn = document.getElementById("downSection");
+navBarToHide = document.getElementById("navBarToHide");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     mybutton.style.display = "block";
     scrollBtn.style.visibility = "hidden";
+    navBarToHide.style.visibility = "hidden";
   } else {
     mybutton.style.display = "none";
     scrollBtn.style.visibility = "visible";
+    navBarToHide.style.visibility = "visible";
   }
 }
 
@@ -47,6 +50,6 @@ function closeFunc(btn) {
 
 function scrollFunc(btn) {
 	var scrollBtn = document.getElementById("downSection");
-	window.scrollTo(0, 900);
+	window.scrollTo(0, 800);
 	scrollBtn.style.visibility = "hidden";
 }
