@@ -34,6 +34,9 @@ body {
 	color: #d8cb2c;
 	/*color: #ffee00;*/
 }
+.jumboText {
+	color: #cfdbd5;
+}
 
 /* Navbar */
 .bg-light {
