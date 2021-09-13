@@ -8,10 +8,10 @@ body {
 #myJumbotron {
 	padding-top: 10vh;
 	padding-left: 0;
-    min-height: 100vh;
+  min-height: 100vh;
 
-    background-color: #f5f5f5;
-    color: #1f2f40;
+  background-color: #f5f5f5;
+  color: #1f2f40;
 }
 #profilePicture {
 	margin-bottom: 20px;
@@ -230,4 +230,8 @@ body {
 }
 a {
 	color: #d8cb2c;
+}
+
+.lebenTitle {
+	margin-bottom: 40px;
 }
