@@ -27,7 +27,7 @@ function topFunction() {
   scrollBtn.style.visibility = "visible";
 }
 
-function myFunction(imgs) {
+function expandTour(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
@@ -42,10 +42,32 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
   disText.style.display = "none";
 }
-function closeFunc(btn) {
+
+function expandPRP(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImgPRP");
+  // Get the image text
+  var imgText = document.getElementById("imgtextPRP");
+  // Get the displayed text to hide
+  var disText = document.getElementById("disTextPRP");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+  disText.style.display = "none";
+}
+
+function closeFuncTour(btn) {
 	var disText = document.getElementById("disText");
 	disText.style.display = "block";
 	btn.parentElement.style.display='none';
+}
+function closeFuncPRP(btn) {
+  var disText = document.getElementById("disTextPRP");
+  disText.style.display = "block";
+  btn.parentElement.style.display='none';
 }
 
 function scrollFunc(btn) {
