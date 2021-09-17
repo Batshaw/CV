@@ -31,6 +31,7 @@
 					<a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
 					<div class="dropdown-menu" aria-labelledby="navDropdown">
 						<a class="dropdown-item" href="#anchorPRP">PRP-Running</a>
+						<a class="dropdown-item" href="#anchorLight">Light Estimation</a>
 						<a class="dropdown-item" href="#anchorTournamentTracker">Tournament Tracker</a>
 						<a class="dropdown-item" href="#anchorStereoMatching">Realtime Stereo Matching</a>
 						<a class="dropdown-item" href="#anchorUniverse">Universe-SceneGraph</a>
@@ -68,10 +69,10 @@
 				
 				<div class="row justify-content-center justify-content-lg-start" id="shortcuts">
 					<div class=" col-auto text-center">
-						<a class="h7" href="#anchorBildung">Lebenslauf</a>
+						<a class="h7" href="#anchorProfile">Lebenslauf</a>
 					</div>
 					<div class=" col-auto text-center">
-						<a class="h7" href="#anchorStereoMatching">Portfolio</a>
+						<a class="h7" href="#anchorPRP">Portfolio</a>
 					</div>
 				</div>
 			</div>
@@ -89,6 +90,7 @@
 					<a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
 					<div class="dropdown-menu" aria-labelledby="navDropdown">
 						<a class="dropdown-item" href="#anchorPRP">PRP-Running</a>
+						<a class="dropdown-item" href="#anchorLight">Light Estimation</a>
 						<a class="dropdown-item" href="#anchorTournamentTracker">Tournament Tracker</a>
 						<a class="dropdown-item" href="#anchorStereoMatching">Realtime Stereo Matching</a>
 						<a class="dropdown-item" href="#anchorUniverse">Universe-SceneGraph</a>
@@ -123,11 +125,22 @@
 
 																						<!-- CONTENT -->
 
+	
+
+	<div id="anchorProfile"></div>
 	<div class="text-center lebenslauf">
 			<h3>LEBENSLAUF</h3>
 	</div>
 
-	<div id="anchorProfile"></div>
+	<!--<div class="container-fluid">
+		<div class="row justify-content-end rounded teileTitle">
+			<div class="col-md-4">
+				<h3 class="lebenslauf">LEBENSLAUF</h3>
+			</div>
+			<div class="col-md-6"></div>
+		</div>
+	</div>-->
+
 	<section class="container-fluid">
 		<div class="row justify-content-end rounded teile">
 			<div class=" col-md-4">
@@ -156,13 +169,13 @@
 					<div class="col-md-4 col-7">
 						<p>quang.nhu.dang@gmail.com</p>
 					</div>
-					<div class="w-100"></div>
+					<!--<div class="w-100"></div>
 					<div class="col-md-3 col-5">
 						<p class="font-weight-bold">Telefon</p>
 					</div>
 					<div class="col-md-4 col-7">
 						<p>+49 1520-796-1793</p>
-					</div>
+					</div>-->
 					<div class="w-100"></div>
 					<div class="col-md-3 col-5">
 						<p class="font-weight-bold">LinkedIn</p>
@@ -182,10 +195,10 @@
 		</div>
 	</section>
 
+	<div id="anchorIT"></div>
 	<div class="container">
 		<hr>
 	</div>
-	<div id="anchorIT"></div>
 	<section class="container-fluid">
 		<div class="row justify-content-end rounded teile">
 			<div class="col-md-4">
@@ -392,17 +405,24 @@
 	<div class="container">
 		<hr>
 	</div>
-	<div class="text-center secTitle">
-			<h3>Portfolio</h3>
-	</div>
-
 	<div id="anchorPRP"></div>
+	<div class="text-center secTitle">
+		<h3>Portfolio</h3>
+	</div>
+	
 	<section id="prp" class="container-fluid">
 		<div class="row justify-content-end rounded teile">
 			<div class="col-md-4 projectText">
 				<h4 class="font-weight-bold">PRP-Running <img src="icon\git.png" width="25px"><a class="linkGit" href="https://github.com/Batshaw/PRP-Running" target="_blank">GitHub</a></h4>
-				<p style="margin-top:20px"><b>Ziel:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus, ex sed faucibus mollis, odio nunc consequat nisl, eu scelerisque nulla orci vel augue. Donec justo ipsum, porttitor at egestas sit amet, placerat in neque. Fusce at velit metus. Curabitur tempus libero nec porttitor rhoncus. In fringilla erat id pulvinar pulvinar. Maecenas ac risus vitae nisi semper condimentum vel sit amet risus. Praesent a dictum diam, vitae dignissim sapien. Ut est nulla, varius malesuada arcu id, imperdiet lobortis erat. Quisque non turpis eros. Aenean accumsan commodo posuere.</p>
-				<p><b>Erfolg:</b> Etiam volutpat nulla sit amet magna commodo hendrerit. Praesent ultrices non erat eu pharetra. Praesent dolor neque, viverra sed commodo vitae, convallis non risus. Aenean tempus, est id sodales convallis, sem diam iaculis dui, id pellentesque justo enim nec erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu eros molestie, tincidunt nisi id, consequat sem.</p>
+				<p style="margin-top:20px"><b>Ziel:</b> Erstellen und Bereitstellen von einer Webanwendung. Mit dieser Anwendung können Läufe die Trainingsplane erstellen und verwalten. Nutzer gibt Information ein, und die Anwendung rechnet und zeigt die  gerechnete Information des Trainingsplanes aus. <br>
+				Außerdem werden Authentifizierung und Autorisierung implementiert, damit Nutzer und Admin sich nach Nutzungsrolle unterscheiden. Zum Beispiel: Nur Admin kann Liste aller Nutzer sehen und bearbeiten.</p>
+				<p><b>Erfolg:</b></p>
+				<ul>
+					<li>Üben die Programmiersprache C# mit .NET und LINQ</li>
+					<li>Verstehen und Verwenden das MVC-Architekturmuster</li>
+					<li>Verwenden Entity Framework, um Daten abzufragen oder zu aktualisieren (CRUD)</li>
+					<li>Erstellen und Bereitstellen von Webanwendungen (mit Azure Cloud Service)</li>
+				</ul>
 				<p><b>Azure Website:</b> <a href="https://prp-running.azurewebsites.net/" target="_blank">PRP-Running</a></p>
 			</div>
 			<div class="col-md-6">
@@ -466,8 +486,14 @@
 		<div class="row justify-content-end rounded teile">
 			<div class="col-md-4 projectText">
 				<h4 class="font-weight-bold">Geometric Light Source Calibration <!--<img src="icon\git.png" width="25px"><a class="linkGit" href="https://github.com/Batshaw/PRP-Running" target="_blank">GitHub</a>--></h4>
-				<p style="margin-top:20px"><b>Ziel:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus, ex sed faucibus mollis, odio nunc consequat nisl, eu scelerisque nulla orci vel augue. Donec justo ipsum, porttitor at egestas sit amet, placerat in neque. Fusce at velit metus. Curabitur tempus libero nec porttitor rhoncus. In fringilla erat id pulvinar pulvinar. Maecenas ac risus vitae nisi semper condimentum vel sit amet risus. Praesent a dictum diam, vitae dignissim sapien. Ut est nulla, varius malesuada arcu id, imperdiet lobortis erat. Quisque non turpis eros. Aenean accumsan commodo posuere.</p>
-				<p><b>Erfolg:</b> Etiam volutpat nulla sit amet magna commodo hendrerit. Praesent ultrices non erat eu pharetra. Praesent dolor neque, viverra sed commodo vitae, convallis non risus. Aenean tempus, est id sodales convallis, sem diam iaculis dui, id pellentesque justo enim nec erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu eros molestie, tincidunt nisi id, consequat sem.</p>
+				<p style="margin-top:20px"><b>Ziel:</b> Implementieren und bewerten ein Framework zur Erkennung von Richtung der Lichtquelle in einem Bild</p>
+
+				<p><b>Erfolg:</b></p>
+				<ul>
+					<li>Mein Ergebnis könnte mit dem bestehenden Forschungsergebnis verglichen werden.</li>
+					<li>Note: 1,3</li>
+					<li>Lernen und Nutzen die Programmiersprache Python mit OpenCV</li>
+				</ul>
 				<p><b>Documentation:</b> <a href="https://docs.google.com/presentation/d/1n_ydb3uXxVhpiJ2HfdcGz2GJkxHntUv2EMI0U7XSi7o/edit?usp=sharing" target="_blank">Final Presentation</a></p>
 			</div>
 			<div class="col-md-6">
@@ -691,20 +717,20 @@
 		<hr>
 	</div>
 	<section class="container-fluid">
-		<div class="row rounded footer teile">
-			<div class="col-md-3">
+		<div class="row rounded footer">
+			<div class="col-md-5">
 				<p class="font-weight-bold">Email</p>
 				<p>quang.nhu.dang@gmail.com</p>
 			</div>
-			<div class="col-md-3">
+			<!--<div class="col-md-3">
 				<p class="font-weight-bold">Telephone</p>
 				<p>+49 1520-796-1793</p>
-			</div>
-			<div class="col-md-3">
+			</div>-->
+			<div class="col-md-5">
 				<p class="font-weight-bold">Follow Me</p>
 				<a href="https://www.linkedin.com/in/quang-dang-39778a112/">LinkedIn</a>
 			</div>
-			<div class="col-md-3 align-self-end">
+			<div class="col-md-2 align-self-end">
 				<p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> By Quang Dang.</p>
 			</div>
 		</div>
